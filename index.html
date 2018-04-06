@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/open-iconic.min.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg nav-light bg-light">
@@ -80,7 +82,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-4">
                     <div class="card text-center" style="border: none">
                         <div class="card-body">
-<span class="oi" data-glyph="info" style="border-radius: 50%; padding: 1.2em; color: white; background: #e91222; font-size: 1.3em"></span>
+                            <span class="oi" data-glyph="info" style="border-radius: 50%; padding: 1.2em; color: white; background: #e91222; font-size: 1.3em"></span>
                             <p class="text-center" style="margin-top: 2.3em">Text test</p>
                         </div>
                     </div>
@@ -168,8 +170,10 @@
                         <li class="list-group-item" style="background: transparent; border: none;">
                             <a href="" style="color: white;">Link 03</a>
                         </li>
-                    </ul>                            
+                    </ul>
                 </div>
+
+                <!-- POPOVER -->
                 <div class="col-xs-12 col-sm-4">
                     <ul class="list-inline" style="margin-top: 3.3em">
                         <li class="list-inline-item" style="color: white">
@@ -178,15 +182,12 @@
                         <li class="list-inline-item" style="color: white">
                             Instagram
                         </li>
-                        <li class="list-inline-item" 
-                             style="color: white"
-                             data-container="body"
-                             data-toggle="popover"
-                             data-placement="top"
-                             data-content="This is my popover"
-                             data-trigger="hover">Whatsapp</li>
+                        <li class="list-inline-item" style="color: white" data-container="body" data-toggle="popover" data-placement="top" data-content="This is my popover"
+                            data-trigger="hover">Whatsapp</li>
                     </ul>
                 </div>
+
+                <!-- MODAL -->
                 <div class="col-xs-12 col-sm-4">
                     <p>
                         Newsletter
@@ -212,14 +213,22 @@
             </div>
         </div>
     </div>
-    
-    <script src="js/jquery.min.js"></script>
+     
+    <script src="js/jquery.min.js"></script> 
+   
+     
     <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    
+
+        <script src="js/bootstrap.min.js"></script> 
+    
+         <!-- Função para chamar o popover -->
+
     <script>
-        $(document).ready(function() {
-            $('[data-toggle="popover"]').popover()
-        })
+             $(document).ready(function () {
+             $('[data-toggle="popover"]').popover()
+         })
     </script>
 </body>
-</html> 
+
+</html>
